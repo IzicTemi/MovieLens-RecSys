@@ -120,3 +120,6 @@ We tested the model by creating a dummy user who rated "Lord of the Rings" five 
 - Harper, F. M., & Konstan, J. A. (2015). The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems, 5(4), 1-19.
 - Koren, Y., Bell, R., & Volinsky, C. (2009). Matrix Factorization Techniques for Recommender Systems. Computer, 42(8), 30-37.
 - Su, X., & Khoshgoftaar, T. M. (2009). A Survey of Collaborative Filtering Techniques. Advances in Artificial Intelligence, 2009, 1-19.
+
+---
+Created by Isaac Temiloluwa OMOLAYO | [Detailed Report](https://drive.google.com/file/d/1wUrgyoqPlTjzdjTSE0rfmwI9wAzNufFb/view?usp=drive_link)
