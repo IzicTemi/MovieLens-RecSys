@@ -58,6 +58,16 @@ The core of our recommendation system is a matrix factorization model that decom
 #### Objective Function
 We use a regularized negative log-likelihood loss function:
 
+$$
+L = - \frac{\lambda}{2} \sum_{m=1}^M \sum_{n \in \Pi(n)} \left(r_{mn} - \left(u_m^T v_n + b_m^{(u)} + b_n^{(i)}\right)\right)^2 - \frac{\tau}{2} \sum_m u_m^T u_m - \frac{\tau}{2} \sum_n v_n^T v_n - \frac{\gamma}{2} \sum_m \left(b_m^{(u)}\right)^2 - \frac{\gamma}{2} \sum_n \left(b_n^{(i)}\right)^2
+$$
+
+Where:
+- $r_{mn}$ is the rating of user $m$ for item $n$
+- $u_m$ and $v_n$ are the latent factors for user $m$ and item $n$ respectively
+- $b_m^{(u)}$ and $b_n^{(i)}$ are the user and item biases
+- $\lambda$, $\tau$, and $\gamma$ are regularization parameters
+
 #### Alternating Least Squares (ALS)
 We utilize the ALS approach to minimize the loss function, iteratively fixing one set of variables and solving for the other.
 
